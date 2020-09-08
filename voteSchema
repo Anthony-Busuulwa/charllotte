@@ -1,0 +1,14 @@
+const mongoose = reqire('mongoose');
+const.Schema = mongoose.Schema;
+
+const upvoteSchema = new mongoose.Schema({
+       vote: Number,
+       date: {type: Date, default: Date.now},
+});
+ const upvote = mongoose.model('upvote', upvoteSchema);
+
+const downvoteSchema = new mongoose.Schema({
+       vote: Number,
+       date: {type: Date, default: Date.now},
+}); 
+const downvote = mongoose.model('downvote', downvoteSchema);
